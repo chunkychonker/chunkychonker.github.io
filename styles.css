@@ -1,0 +1,287 @@
+/* a4stylesheet.css
+   A4: Intro CSS Fill-in Template
+   Instructions: rename this file to styles.css and complete each TODO block.
+*/
+
+/* ===== Base styles (mostly done) ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.brand .dot {
+  color: #35b6cf;
+}
+
+.site-nav a {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background:
+    linear-gradient(rgba(10, 33, 22, 0.45), rgba(10, 33, 22, 0.45)),
+    url("images/mountain.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 110px 0;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 46px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.hero-subhead {
+  margin: 6px 0 22px;
+  font-size: 22px;
+  color: #eef6f3;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 4px 6px;
+}
+
+.btn-dark {
+  background: #1e4630;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 2px solid #35b6cf;
+  color: #1f7f92;
+  background: transparent;
+}
+
+/* ===== Features (3 columns) ===== */
+.features {
+  padding: 42px 0;
+}
+
+.features-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ddd;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: #666;
+  font-size: 22px;
+}
+
+/* ===== Featured content ===== */
+.featured {
+  padding: 42px 0 36px;
+  background: #f7f7f7;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-lede {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 22px;
+  color: #666;
+  font-size: 13px;
+}
+
+.media {
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+.featured-photo {
+  background-image: url("images/hike.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+}
+
+/* ===== Secondary content (2 cards) ===== */
+.secondary {
+  padding: 34px 0 44px;
+}
+
+.secondary-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 13px;
+}
+
+.card-image {
+  min-height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-a {
+  background-image: url("images/mountain.jpeg");
+}
+.img-b {
+  background-image: url("images/hike.jpg");
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #f7f7f7;
+  padding: 42px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer-left a { color: #1f7f92; }
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+
+@media (max-width: 800px) {
+  .header-inner,
+  .features-grid,
+  .secondary-grid,
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .site-nav a {
+    margin: 0 12px 0 0;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-subhead {
+    font-size: 18px;
+  }
+}
