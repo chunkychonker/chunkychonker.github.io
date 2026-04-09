@@ -1,4 +1,38 @@
-# React + Vite
+# Personal Site
+
+This project is a React + Vite personal website with React Router, React
+Bootstrap, and a client-side contact form powered by EmailJS.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+## Contact form setup
+
+The contact page uses EmailJS so messages can be sent from a static site without
+adding a backend server.
+
+1. Create an EmailJS account and connect an email service.
+2. Create an email template that uses these variables:
+   `user_name`, `user_email`, `subject`, and `message`
+3. Copy `.env.example` to `.env.local`
+4. Fill in your EmailJS values:
+
+```bash
+VITE_EMAILJS_PUBLIC_KEY=your_public_key_here
+VITE_EMAILJS_SERVICE_ID=your_service_id_here
+VITE_EMAILJS_TEMPLATE_ID=your_template_id_here
+```
+
+5. Restart the Vite dev server and test the form on the Connect page.
+
+If those values are missing, the contact form will still render but it will show
+a warning instead of sending mail.
+
+For a ready-to-paste subject/body template, see `EMAILJS_TEMPLATE.md`.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
