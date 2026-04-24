@@ -23,25 +23,6 @@ function ConnectPage() {
         </Card>
       </PageIntro>
 
-      <section className="content-section">
-        <Container>
-          <Row className="g-4">
-            <Col lg={8}>
-              <Card className="contact-card h-100">
-                <Card.Body>
-                  <p className="eyebrow">A few good starting points</p>
-                  <h2>Projects, hikes, games, school, or anything interesting you are working on</h2>
-                  <p>
-                    If you are reaching out, I am always happy to hear about what
-                    you are building, what trails you recommend, or what you have
-                    been learning lately.
-                  </p>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
     </>
   )
 }

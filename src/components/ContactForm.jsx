@@ -30,7 +30,7 @@ function ContactForm() {
       setStatus({
         type: 'danger',
         message:
-          'The contact form is not connected yet. Add your EmailJS keys in a local .env file first.',
+          'The contact form is not connected yet. Add your EmailJS keys in `.env.local` for local testing and in GitHub Actions secrets for the live site.',
       })
       return
     }
@@ -69,7 +69,8 @@ function ContactForm() {
         <Alert variant="warning" className="mb-4">
           EmailJS is not configured yet. Add `VITE_EMAILJS_PUBLIC_KEY`,
           `VITE_EMAILJS_SERVICE_ID`, and `VITE_EMAILJS_TEMPLATE_ID` to your local
-          environment file before testing submissions.
+          `.env.local` file before testing submissions, and add the same names as
+          GitHub repository secrets if you want the deployed site to send mail too.
         </Alert>
       ) : null}
 

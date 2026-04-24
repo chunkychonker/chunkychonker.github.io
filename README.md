@@ -29,6 +29,21 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id_here
 
 5. Restart the Vite dev server and test the form on the Connect page.
 
+## GitHub Pages EmailJS setup
+
+If you want the deployed GitHub Pages site to send mail too, add these same
+values as repository secrets in GitHub:
+
+- `VITE_EMAILJS_PUBLIC_KEY`
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_TEMPLATE_ID`
+
+Path in GitHub:
+`Settings` -> `Secrets and variables` -> `Actions` -> `New repository secret`
+
+After adding them, push to `main` again so the Pages workflow rebuilds the site
+with those values available during the Vite build.
+
 If those values are missing, the contact form will still render but it will show
 a warning instead of sending mail.
 
