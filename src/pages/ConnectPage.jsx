@@ -8,7 +8,7 @@ function ConnectPage() {
       <PageIntro
         badge="Connect"
         title="Reach out if you want to talk about anything or have any good hiking spots you want to recommend."
-        text="Use the message box here to send me a note directly from the site."
+        text="Use the form here to send me a note directly from the site."
       >
         <Card className="contact-card contact-intro-card h-100">
           <Card.Body>
