@@ -14,7 +14,7 @@ function getEmbedUrl(reelUrl) {
       return null
     }
 
-    return `https://www.instagram.com/reel/${pathParts[reelIndex + 1]}/embed/captioned/`
+    return `https://www.instagram.com/reel/${pathParts[reelIndex + 1]}/embed/`
   } catch {
     return null
   }
@@ -28,7 +28,7 @@ function InstagramReelCard({ eyebrow, title, text, reelUrl }) {
       <Card.Body>
         <p className="eyebrow">{eyebrow}</p>
         <h2>{title}</h2>
-        <p>{text}</p>
+        {text ? <p>{text}</p> : null}
 
         <div className="reel-frame">
           {embedUrl ? (

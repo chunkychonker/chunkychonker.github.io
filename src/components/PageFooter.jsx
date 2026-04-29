@@ -18,10 +18,10 @@ function PageFooter() {
           <Col md={3}>
             <h3 className="footer-heading">Reach Out</h3>
             <a href="mailto:sling22@wisc.edu">sling22@wisc.edu</a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/steveling06" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com/chunkychonker" target="_blank" rel="noreferrer">
               GitHub
             </a>
           </Col>

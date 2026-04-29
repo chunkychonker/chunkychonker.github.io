@@ -12,7 +12,7 @@ function HeroSection() {
             </Badge>
             <h1 className="hero-title">Hobbies, interests, and projects.</h1>
             <p className="hero-copy">
-              I am a computer science student at UW Madison, who likes building with technology, hooping
+              I am a computer science student at UW Madison, who likes building with technology, hooping,
               competing in Valorant, and enjoying the outdoors.
             </p>
             <Stack direction="horizontal" gap={3} className="flex-wrap">

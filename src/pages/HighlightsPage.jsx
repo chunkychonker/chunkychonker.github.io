@@ -10,88 +10,89 @@ const galleryPhotos = [
   {
     src: '/images/hike.jpg',
     alt: 'View of a mountain trail and surrounding ridges.',
-    tag: 'Trail day',
-    title: 'Mountain overlook',
-  },
-  {
-    src: '/images/hike-alt.jpg',
-    alt: 'Outdoor hiking scene with trees and mountain landscape.',
-    tag: 'Outdoors',
-    title: 'Another trail memory',
+    tag: 'Chill Spot',
+    title: 'Mountain Si Overlook',
   },
   {
     src: '/images/mountain.jpeg',
     alt: 'Wide mountain landscape under open sky.',
     tag: 'Scenery',
-    title: 'PNW energy',
+    title: 'Mount Rainier',
   },
   {
     src: '/images/IMG_1360.jpg',
     alt: 'Personal outdoor photo from a trip or hike.',
     tag: 'Camera roll',
-    title: 'Trip highlight',
-    caption: 'One of the photos that felt worth keeping because it captures the atmosphere really well.',
-  },
-  {
-    src: '/images/IMG_1286.jpg',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 01',
-  },
-  {
-    src: '/images/IMG_1382.jpg',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 02',
-  },
-  {
-    src: '/images/IMG_1387.jpg',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 03',
-  },
-  {
-    src: '/images/IMG_2635.jpg',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 04',
-  },
-  {
-    src: '/images/IMG_2718.jpg',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 05',
-  },
-  {
-    src: '/images/IMG_3361.PNG',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 06',
-  },
-  {
-    src: '/images/IMG_4868.jpg',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 07',
+    title: 'Sittin ona Bridge',
+    caption: 'Colchuck Lake, WA',
+    orientation: 'portrait',
   },
   {
     src: '/images/IMG_5402.jpeg',
     alt: 'Personal photo from an outdoor adventure.',
-    tag: 'Favorite shot',
-    title: 'Weekend outside',
-  },
-  {
-    src: '/images/IMG_6684.jpg',
-    alt: 'Personal photo from the highlights collection.',
-    tag: 'Camera roll',
-    title: 'Memory 08',
+    tag: 'Favorite Shot',
+    title: 'Last Sunset of the Summer',
   },
   {
     src: '/images/IMG_4842.JPEG',
     alt: 'Personal landscape or travel photo.',
     tag: 'Snapshot',
-    title: 'One more view',
-    caption: 'Adding a gallery here makes the page feel more personal and more complete.',
+    title: 'Pristine Alpine Lake',
+    caption: 'Somewhere in the cascades',
+  },
+  {
+    src: '/images/hike-alt.jpg',
+    alt: 'Outdoor hiking scene with trees and mountain landscape.',
+    tag: 'Camera roll',
+    title: 'Trail Memory',
+  },
+  {
+    src: '/images/IMG_1286.jpg',
+    alt: 'Pacific Northwest outdoor photo from the gallery collection.',
+    tag: 'Camera roll',
+    title: 'Outdoor Memory 01',
+  },
+  {
+    src: '/images/IMG_1382.jpg',
+    alt: 'Pacific Northwest outdoor photo from the gallery collection.',
+    tag: 'Camera roll',
+    title: 'Outdoor Memory 02',
+    orientation: 'portrait',
+  },
+  {
+    src: '/images/IMG_1387.jpg',
+    alt: 'Pacific Northwest outdoor photo from the gallery collection.',
+    tag: 'Camera roll',
+    title: 'Outdoor Memory 03',
+    orientation: 'portrait',
+  },
+  {
+    src: '/images/IMG_2635.jpg',
+    alt: 'Pacific Northwest outdoor photo from the gallery collection.',
+    tag: 'Camera roll',
+    title: 'Outdoor Memory 04',
+    orientation: 'portrait',
+  },
+  {
+    src: '/images/IMG_2718.jpg',
+    alt: 'Pacific Northwest outdoor photo from the gallery collection.',
+    tag: 'Camera roll',
+    title: 'Outdoor Memory 05',
+    orientation: 'portrait',
+  },
+  {
+    src: '/images/IMG_4868.jpg',
+    alt: 'Pacific Northwest outdoor photo from the gallery collection.',
+    tag: 'Camera roll',
+    title: 'Outdoor Memory 06',
+    orientation: 'portrait',
+  },
+  {
+    src: '/images/IMG_6684.jpg',
+    alt: 'Pacific Northwest outdoor photo from the gallery collection.',
+    tag: 'Camera roll',
+    title: 'Outdoor Memory 07',
+    orientation: 'portrait',
   },
 ]
 
@@ -108,17 +109,21 @@ function HighlightsPage() {
           <StoryPanel
             badge="Featured story"
             title="Hiking"
-            text="Growing up around the Pacific Northwest made outdoor spaces feel familiar. Hiking is still one of the easiest ways for me to step away from stress, enjoy where I am, and recharge."
+            text="Growing up in the Pacific Northwest made the outdoors a big part of my life. Hiking is one of the easiest ways for me to step away from stress, practice mindfulness, and spend time with friends."
             image="/images/hike.jpg"
-            alt="Trail view overlooking mountains."
+            alt="Mount Si."
+            showButton={false}
           />
 
           <StoryPanel
-            badge="Competitive side"
-            title="Valorant taught me how much I enjoy coordinated team play"
-            text="I picked up Valorant in high school and kept pushing because I loved how much progress comes from communication, discipline, and learning with other people."
-            image="/images/mountain.jpeg"
-            alt="Mountain scene representing focused, competitive energy."
+            badge="Competitive Gaming"
+            title="Valorant taught me how much I enjoy coordinated team play and strategy"
+            text="I picked up Valorant in high school and kept pushing because I loved how much progress comes from communication, discipline, and learning with other people. I've hit radiant multiple acts and peaked top 100 in NA.
+            At UW Madison, I've won multiple state titles as well as placing well in national tournaments with my team."
+            image="/images/IMG_3361.PNG"
+            alt="Steve playing Valorant at an esports setup."
+            imageClassName="story-image-contain story-image-compact"
+            showButton={false}
             reverse
           />
         </Container>
@@ -130,7 +135,7 @@ function HighlightsPage() {
             <Col lg={6}>
               <div className="section-copy-block">
                 <p className="eyebrow">Current mix</p>
-                <h2>What I am actively balancing this semester</h2>
+                <h2>What I am actively balancing this school semester</h2>
                 <p>
                   School, side projects, and hobbies all pull in different
                   directions, so I try to keep a mix that feels challenging and fun.
@@ -152,11 +157,9 @@ function HighlightsPage() {
         <Container>
           <div className="section-copy-block">
             <p className="eyebrow">Photo gallery</p>
-            <h2>A few photos that capture the parts of life I keep coming back to.</h2>
+            <h2>Some photos of the pacific northwest.</h2>
             <p>
-              I had already been collecting a bunch of photos, so this section turns
-              them into something visitors can actually browse instead of leaving
-              them buried in the project files.
+              Windows into the outdoors of WA.
             </p>
           </div>
           <PhotoGallery photos={galleryPhotos} />
@@ -169,23 +172,17 @@ function HighlightsPage() {
             <Col lg={5}>
               <div className="section-copy-block mb-0">
                 <p className="eyebrow">Recent reel</p>
-                <h2>A quick clip that shows why I keep coming back to the outdoors.</h2>
+                <h2>Some Clips from a Snoqualmie Pow Day.</h2>
                 <p>
-                  I wanted one section here to feel a little more alive than just
-                  text and photos. Embedding a reel makes this page feel closer to
-                  how I actually share moments from hikes and trips.
-                </p>
-                <p>
-                  This also gives the site one more interactive piece for visitors
-                  to click into if they want to see more.
+                  Skiing is another outdoor activity I'm passionate about. It not only gives me the chance to spend time in the mountains during the 
+                  winter, but also lets me push myself physically and mentally.
                 </p>
               </div>
             </Col>
             <Col lg={7}>
               <InstagramReelCard
                 eyebrow="Instagram"
-                title="Featured outdoor reel"
-                text="Swap in your actual public reel link to show one of your recent hiking or travel clips right on the site."
+                title="Ski Clips from Snoqualmie Pow Day"
                 reelUrl={featuredReelUrl}
               />
             </Col>

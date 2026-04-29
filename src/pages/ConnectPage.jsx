@@ -8,16 +8,12 @@ function ConnectPage() {
       <PageIntro
         badge="Connect"
         title="Reach out if you want to talk about anything or have any good hiking spots you want to recommend."
-        text="Use the form here to send me a note directly from the site."
+        text="Use the form here to send me a note."
       >
         <Card className="contact-card contact-intro-card h-100">
           <Card.Body>
             <p className="eyebrow">Send a message</p>
-            <h2>Drop a note directly from the site</h2>
-            <p>
-              Messages from this form can be delivered straight to my inbox once
-              EmailJS is connected.
-            </p>
+            <h2>Drop a note</h2>
             <ContactForm />
           </Card.Body>
         </Card>

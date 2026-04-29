@@ -15,7 +15,13 @@ function PhotoGallery({ photos }) {
                 className="gallery-photo-button"
                 onClick={() => setActivePhoto(photo)}
               >
-                <img src={photo.src} alt={photo.alt} className="gallery-photo" />
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className={`gallery-photo ${
+                    photo.orientation === 'portrait' ? 'gallery-photo-portrait' : ''
+                  }`.trim()}
+                />
               </button>
               <Card.Body>
                 <p className="eyebrow mb-2">{photo.tag}</p>
