@@ -8,18 +8,6 @@ const featuredReelUrl = 'https://www.instagram.com/p/C34EwMDL4WP/'
 
 const galleryPhotos = [
   {
-    src: '/images/hike.jpg',
-    alt: 'View of a mountain trail and surrounding ridges.',
-    tag: 'Chill Spot',
-    title: 'Mountain Si Overlook',
-  },
-  {
-    src: '/images/mountain.jpeg',
-    alt: 'Wide mountain landscape under open sky.',
-    tag: 'Scenery',
-    title: 'Mount Rainier',
-  },
-  {
     src: '/images/IMG_1360.jpg',
     alt: 'Personal outdoor photo from a trip or hike.',
     tag: 'Camera roll',
