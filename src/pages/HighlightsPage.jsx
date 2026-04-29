@@ -14,7 +14,7 @@ const galleryPhotos = [
     title: 'Mountain overlook',
   },
   {
-    src: '/images/hike.jpeg',
+    src: '/images/hike-alt.jpg',
     alt: 'Outdoor hiking scene with trees and mountain landscape.',
     tag: 'Outdoors',
     title: 'Another trail memory',
@@ -33,31 +33,31 @@ const galleryPhotos = [
     caption: 'One of the photos that felt worth keeping because it captures the atmosphere really well.',
   },
   {
-    src: '/images/IMG_1286.HEIC',
+    src: '/images/IMG_1286.jpg',
     alt: 'Personal photo from the highlights collection.',
     tag: 'Camera roll',
     title: 'Memory 01',
   },
   {
-    src: '/images/IMG_1382.HEIC',
+    src: '/images/IMG_1382.jpg',
     alt: 'Personal photo from the highlights collection.',
     tag: 'Camera roll',
     title: 'Memory 02',
   },
   {
-    src: '/images/IMG_1387.HEIC',
+    src: '/images/IMG_1387.jpg',
     alt: 'Personal photo from the highlights collection.',
     tag: 'Camera roll',
     title: 'Memory 03',
   },
   {
-    src: '/images/IMG_2635.HEIC',
+    src: '/images/IMG_2635.jpg',
     alt: 'Personal photo from the highlights collection.',
     tag: 'Camera roll',
     title: 'Memory 04',
   },
   {
-    src: '/images/IMG_2718.HEIC',
+    src: '/images/IMG_2718.jpg',
     alt: 'Personal photo from the highlights collection.',
     tag: 'Camera roll',
     title: 'Memory 05',
@@ -69,7 +69,7 @@ const galleryPhotos = [
     title: 'Memory 06',
   },
   {
-    src: '/images/IMG_4868.HEIC',
+    src: '/images/IMG_4868.jpg',
     alt: 'Personal photo from the highlights collection.',
     tag: 'Camera roll',
     title: 'Memory 07',
@@ -81,7 +81,7 @@ const galleryPhotos = [
     title: 'Weekend outside',
   },
   {
-    src: '/images/IMG_6684.HEIC',
+    src: '/images/IMG_6684.jpg',
     alt: 'Personal photo from the highlights collection.',
     tag: 'Camera roll',
     title: 'Memory 08',

@@ -8,6 +8,8 @@ const emailJsConfig = {
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 }
 
+const fallbackEmail = 'sling22@wisc.edu'
+
 function ContactForm() {
   const formRef = useRef(null)
   const [validated, setValidated] = useState(false)
@@ -27,10 +29,22 @@ function ContactForm() {
     }
 
     if (!isConfigured) {
+      const formData = new FormData(form)
+      const subject = formData.get('subject')
+      const body = [
+        `Name: ${formData.get('user_name')}`,
+        `Email: ${formData.get('user_email')}`,
+        '',
+        formData.get('message'),
+      ].join('\n')
+
+      window.location.href = `mailto:${fallbackEmail}?subject=${encodeURIComponent(
+        subject,
+      )}&body=${encodeURIComponent(body)}`
+
       setStatus({
-        type: 'danger',
-        message:
-          'The contact form is not connected yet. Add your EmailJS keys in `.env.local` for local testing and in GitHub Actions secrets for the live site.',
+        type: 'success',
+        message: 'Your email app has been opened with this message filled in.',
       })
       return
     }
@@ -65,15 +79,6 @@ function ContactForm() {
 
   return (
     <div className="contact-form-shell">
-      {!isConfigured ? (
-        <Alert variant="warning" className="mb-4">
-          EmailJS is not configured yet. Add `VITE_EMAILJS_PUBLIC_KEY`,
-          `VITE_EMAILJS_SERVICE_ID`, and `VITE_EMAILJS_TEMPLATE_ID` to your local
-          `.env.local` file before testing submissions, and add the same names as
-          GitHub repository secrets if you want the deployed site to send mail too.
-        </Alert>
-      ) : null}
-
       {status.type !== 'idle' ? (
         <Alert variant={status.type} className="mb-4">
           {status.message}
